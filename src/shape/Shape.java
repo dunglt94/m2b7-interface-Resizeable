@@ -1,6 +1,8 @@
 package shape;
 
-public class Shape {
+import resizeable.Resizeable;
+
+public class Shape implements Resizeable {
     private String color = "green";
     private boolean filled = true;
 
@@ -26,6 +28,9 @@ public class Shape {
     public void setFilled(boolean filled) {
         this.filled = filled;
     }
+
+    @Override
+    public void resize(double percent) {}
 
     @Override
     public String toString() {
